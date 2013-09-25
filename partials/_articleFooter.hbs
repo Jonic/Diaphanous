@@ -1,0 +1,13 @@
+<footer class="article-details">
+	<p class="article-meta">
+		<time datetime="{{date published_at format='YYYY-MM-DD'}}" pubdate>
+			{{date published_at format='YYYY-MM-DD'}}
+		</time>
+	</p>
+
+	{{#if tags}}
+		{{#each tags}}
+			{{this.name}}
+		{{/each}}
+	{{/if}}
+</footer>

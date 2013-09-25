@@ -1,0 +1,35 @@
+{
+  "name": "Diaphanous",
+  "version": "0.0.1",
+  "author": {
+    "email": "jonic@100yen.co.uk",
+    "name": "Jonic Linley",
+    "url": "http://100yen.co.uk/"
+  },
+  "copyright": "Copyright 2013 Jonic Linley",
+  "description": "A dead-basic starter theme for Ghost",
+  "dependencies": {
+    "bower": "~1.2.6"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-cssmin": "~0.6.2",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-watch": "~0.5.0"
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "bare bones",
+    "barebones",
+    "diaphanous"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jonic/Diaphanous"
+  }
+}

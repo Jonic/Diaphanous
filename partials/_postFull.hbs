@@ -1,0 +1,13 @@
+<article class="{{post_class}}" role="article">
+	{{> _articleHeader}}
+
+	{{#if image}}
+		<figure>
+			<img alt="" src="/content/images/{{image}}" />
+		</figure>
+	{{/if}}
+
+	{{content}}
+
+	{{> _articleFooter}}
+</article>

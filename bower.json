@@ -1,0 +1,15 @@
+{
+  "name": "Diaphanous",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Jonic/Diaphanous",
+  "authors": [
+    "Jonic Linley <jonic@100yen.co.uk>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "html5shiv": "~3.7.0",
+    "bourbon": "~3.1.8",
+    "normalize-css": "~2.1.3"
+  }
+}
