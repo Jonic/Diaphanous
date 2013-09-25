@@ -1,18 +1,14 @@
 module.exports = function (grunt) {
 	grunt.initConfig({
-		project: {
-			css: {
-				input: 'assets/styles/diaphanous.scss',
-				output: 'public/styles/diaphanous.min.css'
-			},
-
-			js: {
-				input: 'assets/scripts/*.js',
-				output: 'public/scripts/diaphanous.min.js'
-			}
+		css: {
+			input: 'assets/styles/diaphanous.scss',
+			output: 'public/styles/diaphanous.min.css'
 		},
 
-
+		js: {
+			input: 'assets/scripts/*.js',
+			output: 'public/scripts/diaphanous.min.js'
+		},
 
 		pkg: grunt.file.readJSON('package.json'),
 
@@ -35,7 +31,7 @@ module.exports = function (grunt) {
 			},
 			dev: {
 				files: {
-					'<%= project.output.css %>': '<%= project.input.css %>'
+					'<%= css.output %>': '<%= css.input %>'
 				},
 				options: {
 					style: 'expanded'
@@ -43,7 +39,7 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				files: {
-					'<%= project.output.css %>': '<%= project.input.css %>'
+					'<%= css.output %>': '<%= css.input %>'
 				},
 				options: {
 					style: 'compressed'
@@ -54,7 +50,7 @@ module.exports = function (grunt) {
 
 
 		jshint: {
-			files: '<%= project.input.js %>',
+			files: '<%= js.input %>',
 			options: {
 				jshintrc: '.jshintrc'
 			}
@@ -69,7 +65,7 @@ module.exports = function (grunt) {
 			},
 			dev: {
 				files: {
-					'<%= project.output.js %>': '<%= project.input.js %>'
+					'<%= js.output %>': '<%= js.input %>'
 				}
 			}
 		},
@@ -81,7 +77,7 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				files: {
-					'<%= project.output.js %>': ['<%= project.output.js %>']
+					'<%= js.output %>': ['<%= js.output %>']
 				}
 			}
 		},
@@ -90,12 +86,12 @@ module.exports = function (grunt) {
 
 		watch: {
 			css: {
-				files: '<%= project.input.css %>',
+				files: '<%= css.input %>',
 				tasks: ['sass:dev']
 			},
 			scripts: {
-				files: '<%= project.input.js %>',
-				tasks: ['concat', 'jshint']
+				files: '<%= js.input %>',
+				tasks: ['jshint', 'concat:dev']
 			}
 		}
 
