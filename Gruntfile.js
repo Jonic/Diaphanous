@@ -1,31 +1,14 @@
 module.exports = function (grunt) {
 	grunt.initConfig({
 		project: {
-			paths: {
-				css: {
-					dev: 'assets/styles',
-					dist: 'public/styles'
-				},
-				js: {
-					dev: 'assets/scripts',
-					dist: 'public/scripts'
-				}
+			css: {
+				input: 'assets/styles/diaphanous.scss',
+				output: 'public/styles/diaphanous.min.css'
 			},
 
-			input: {
-				css: '<%= project.paths.css.dev %>/diaphanous.scss',
-				js: '<%= project.paths.js.dev %>/*.js'
-			},
-
-			output: {
-				css: {
-					dev: '<%= project.paths.css.dist %>/diaphanous.css',
-					dist: '<%= project.paths.css.dist %>/diaphanous.min.css'
-				},
-				js: {
-					dev: '<%= project.paths.js.dist %>/diaphanous.js',
-					dist: '<%= project.paths.js.dist %>/diaphanous.min.js'
-				}
+			js: {
+				input: 'assets/scripts/*.js',
+				output: 'public/scripts/diaphanous.min.js'
 			}
 		},
 
@@ -52,7 +35,7 @@ module.exports = function (grunt) {
 			},
 			dev: {
 				files: {
-					'<%= project.output.css.dev %>': '<%= project.input.css %>'
+					'<%= project.output.css %>': '<%= project.input.css %>'
 				},
 				options: {
 					style: 'expanded'
@@ -60,18 +43,11 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				files: {
-					'<%= project.output.css.dist %>': '<%= project.input.css %>'
+					'<%= project.output.css %>': '<%= project.input.css %>'
 				},
 				options: {
 					style: 'compressed'
 				}
-			}
-		},
-
-		cssmin: {
-			css: {
-				src: '<%= project.output.css.dev %>',
-				dest: '<%= project.output.css.dist %>'
 			}
 		},
 
@@ -93,7 +69,7 @@ module.exports = function (grunt) {
 			},
 			dev: {
 				files: {
-					'<%= project.output.js.dev %>': '<%= project.input.js %>'
+					'<%= project.output.js %>': '<%= project.input.js %>'
 				}
 			}
 		},
@@ -105,7 +81,7 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				files: {
-					'<%= project.output.js.dist %>': ['<%= project.output.js.dev %>']
+					'<%= project.output.js %>': ['<%= project.output.js %>']
 				}
 			}
 		},
@@ -128,7 +104,6 @@ module.exports = function (grunt) {
 
 
 	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -144,7 +119,6 @@ module.exports = function (grunt) {
 	grunt.registerTask('build', [
 		'sass:dist',
 		'jshint',
-		'uglify',
-		'cssmin'
+		'uglify'
 	]);
 };
