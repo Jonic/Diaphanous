@@ -6,3 +6,300 @@
  * Copyright 2013 Jonic Linley MIT licensed.
  */
 
+body {
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color: #444444;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 36px;
+  line-height: 2.25rem;
+  margin: 0 auto;
+  min-width: 320px;
+  min-width: 20rem;
+  overflow-x: hidden;
+  position: relative;
+}
+
+a {
+  color: #3c8fc7;
+  cursor: pointer;
+  text-decoration: underline;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+a:active, a:focus, a:hover {
+  color: #113f8c;
+  opacity: 1;
+}
+a:visited {
+  color: #9d4b94;
+  opacity: 0.75;
+}
+
+b {
+  font-weight: 700;
+}
+
+blockquote {
+  font-style: italic;
+  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
+  padding: 0px 36px 0px 36px;
+  padding: 0rem 2.25rem 0rem 2.25rem;
+}
+blockquote p:before,
+blockquote p:after {
+  background: #fcc;
+  display: inline-block;
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 0;
+  text-align: center;
+}
+blockquote p:first-child:before {
+  content: open-quote;
+}
+blockquote p:last-child:after {
+  content: close-quote;
+}
+
+button {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+cite {
+  display: block;
+  text-align: right;
+}
+
+code {
+  background: #7f7f7f;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0px 9px 0px 9px;
+  padding: 0rem 0.5625rem 0rem 0.5625rem;
+}
+
+dl {
+  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
+}
+dl dd {
+  margin-left: 36px;
+  margin-left: 2.25rem;
+}
+dl dt {
+  margin: 0;
+}
+
+em {
+  font-style: italic;
+}
+
+figure {
+  display: block;
+  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
+}
+figure img {
+  display: block;
+  width: 100%;
+}
+figure figcaption {
+  color: #7f7f7f;
+  font-style: italic;
+}
+
+i {
+  font-style: italic;
+}
+
+input {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 36px;
+  line-height: 2.25rem;
+  margin: 0;
+  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
+  text-align: center;
+}
+
+h1, .h1 {
+  font-size: 60px;
+  font-size: 3.75rem;
+  line-height: 72px;
+  line-height: 4.5rem;
+}
+
+h2, .h2 {
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+h3, .h3 {
+  font-size: 26px;
+  font-size: 1.625rem;
+}
+
+label {
+  margin: 0;
+}
+
+ol li {
+  list-style: decimal;
+}
+ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+blockquote, code, dl, label, ol, p, pre, td, th, ul {
+  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
+  margin-top: 0;
+}
+
+.standfirst {
+  font-size: 26px;
+  font-size: 1.625rem;
+}
+
+select {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+strong {
+  font-weight: 700;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
+}
+table td, table th {
+  margin: 0;
+}
+
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+time {
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+}
+
+ul li {
+  list-style: disc;
+}
+ul ol, ul ul {
+  margin-bottom: 0;
+}
+
+html.debug.debug {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 35px, rgba(0, 0, 0, 0.15) 36px);
+  background: linear-gradient(to , rgba(0, 0, 0, 0.15) 36px);
+  background-size: 100% 36px;
+}
+html.debug.debug:before {
+  background: #ffc;
+  border-radius: 0px 0px 12px 12px;
+  border-radius: 0rem 0rem 0.75rem 0.75rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  content: "Resolution width <= 320px";
+  display: block;
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  padding: 0px 12px 0px 12px;
+  padding: 0rem 0.75rem 0rem 0.75rem;
+  position: fixed;
+  right: 36px;
+  right: 2.25rem;
+}
+@media only screen and (max-width: 320px) {
+  html.debug.debug:before {
+    content: "Resolution width: <= 320px";
+  }
+}
+@media only screen and (max-width: 20rem) {
+  html.debug.debug:before {
+    content: "Resolution width: <= 320px";
+  }
+}
+@media only screen and (min-width: 320px) {
+  html.debug.debug:before {
+    content: "Resolution width: 320px <> 560px";
+  }
+}
+@media only screen and (min-width: 20rem) {
+  html.debug.debug:before {
+    content: "Resolution width: 320px <> 560px";
+  }
+}
+@media only screen and (min-width: 560px) {
+  html.debug.debug:before {
+    content: "Resolution width: 560px <> 780px";
+  }
+}
+@media only screen and (min-width: 35rem) {
+  html.debug.debug:before {
+    content: "Resolution width: 560px <> 780px";
+  }
+}
+@media only screen and (min-width: 780px) {
+  html.debug.debug:before {
+    content: "Resolution width: 780px <> 1000px";
+  }
+}
+@media only screen and (min-width: 48.75rem) {
+  html.debug.debug:before {
+    content: "Resolution width: 780px <> 1000px";
+  }
+}
+@media only screen and (min-width: 1000px) {
+  html.debug.debug:before {
+    content: "Resolution width: >= 1000px";
+  }
+}
+@media only screen and (min-width: 62.5rem) {
+  html.debug.debug:before {
+    content: "Resolution width: >= 1000px";
+  }
+}

@@ -1,0 +1,294 @@
+/*!
+ * Diaphanous
+ * https://github.com/Jonic/Diaphanous
+ * @author Jonic Linley <jonic@100yen.co.uk>
+ * @version 0.0.1
+ * Copyright 2013 Jonic Linley MIT licensed.
+ */
+
+address:before,
+article:before,
+aside:before,
+blockquote:before,
+body:before,
+div:before,
+dl:before,
+fieldset:before,
+figcaption:before,
+figure:before,
+footer:before,
+form:before,
+h1:before,
+h2:before,
+h3:before,
+h4:before,
+h5:before,
+h6:before,
+header:before,
+html:before,
+li:before,
+main:before,
+ol:before,
+p:before,
+section:before,
+nav:before,
+ul:before, address:after,
+article:after,
+aside:after,
+blockquote:after,
+body:after,
+div:after,
+dl:after,
+fieldset:after,
+figcaption:after,
+figure:after,
+footer:after,
+form:after,
+h1:after,
+h2:after,
+h3:after,
+h4:after,
+h5:after,
+h6:after,
+header:after,
+html:after,
+li:after,
+main:after,
+ol:after,
+p:after,
+section:after,
+nav:after,
+ul:after {
+  content: '';
+  display: table;
+}
+address:after,
+article:after,
+aside:after,
+blockquote:after,
+body:after,
+div:after,
+dl:after,
+fieldset:after,
+figcaption:after,
+figure:after,
+footer:after,
+form:after,
+h1:after,
+h2:after,
+h3:after,
+h4:after,
+h5:after,
+h6:after,
+header:after,
+html:after,
+li:after,
+main:after,
+ol:after,
+p:after,
+section:after,
+nav:after,
+ul:after {
+  clear: both;
+}
+
+body {
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  background: #fbfcfc;
+  min-height: 100%;
+}
+
+body {
+  color: #6b6f74;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  min-height: 100%;
+  min-width: 320;
+}
+
+a {
+  color: #00b5eb;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: color 300ms ease-in-out;
+  -moz-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+a:active, a:focus, a:hover {
+  color: #00b5eb;
+  text-decoration: underline;
+}
+
+address {
+  font-style: normal;
+}
+
+b {
+  font-weight: 700;
+}
+
+blockquote {
+  margin-bottom: 28;
+}
+blockquote p:before,
+blockquote p:after {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 0;
+}
+blockquote p:first-child:before {
+  content: '\201C';
+}
+blockquote p:last-of-type {
+  margin: 0;
+}
+blockquote p:last-of-type:after {
+  content: '\201D';
+}
+
+button {
+  border: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+cite {
+  display: block;
+  text-align: right;
+}
+
+code {
+  background: #9c9fa2;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0 7;
+}
+
+dl {
+  margin-bottom: 28px;
+}
+dl dd {
+  margin-left: 28px;
+}
+dl dt {
+  margin: 0;
+}
+
+em {
+  font-style: italic;
+}
+
+figure {
+  display: block;
+  margin-bottom: 28px;
+}
+figure img {
+  display: block;
+  width: 100%;
+}
+figure figcaption {
+  color: #9c9fa2;
+  font-style: italic;
+}
+
+i {
+  font-style: italic;
+}
+
+input {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+h1, .h1 {
+  font-size: 26px;
+}
+
+h2, .h2 {
+  font-size: 24px;
+}
+
+h3, .h3 {
+  font-size: 22px;
+}
+
+label {
+  margin: 0;
+}
+
+ol li {
+  list-style: decimal;
+}
+ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+blockquote, code, dl, ol, p, pre, td, th, ul {
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.standfirst {
+  font-size: 20px;
+}
+
+select {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+strong {
+  font-weight: 700;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 28px;
+}
+table td, table th {
+  margin: 0;
+}
+
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+time {
+  display: inline-block;
+  font-size: 14px;
+}
+
+ul li {
+  list-style: disc;
+}
+ul ol, ul ul {
+  margin-bottom: 0;
+}

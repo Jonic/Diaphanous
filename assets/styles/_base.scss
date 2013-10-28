@@ -1,0 +1,232 @@
+
+//  Setup Box Sizing
+
+*, *:before, *:after {
+	@include box-sizing(border-box);
+}
+
+//	CLEARFIX ALL THE THINGS
+
+address,
+article,
+aside,
+blockquote,
+body,
+div,
+dl,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+li,
+main,
+ol,
+p,
+section,
+nav,
+ul {
+	@extend %clearfix;
+}
+
+//  Sort the body's defaults out
+
+html {
+	background: $color-bg;
+	min-height: 100%;
+}
+
+	body {
+		color: $color-base;
+		font-family: $font-family-primary;
+		font-size: $font-size;
+		font-weight: $font-weight;
+		line-height: $line-height;
+		min-height: 100%;
+		min-width: $break-narrow;
+		@extend %text-rendering;
+		@extend %text-size-adjust;
+	}
+
+//	Base element styles
+
+a {
+	color: $color-links;
+	cursor: pointer;
+	text-decoration: none;
+	@include transition(color 300ms ease-in-out);
+
+	&:active,
+	&:focus,
+	&:hover {
+		color: $color-links-active;
+		text-decoration: underline;
+	}
+}
+
+address {
+	font-style: normal;
+}
+
+b {
+	font-weight: $font-weight-bold;
+}
+
+blockquote {
+	margin-bottom: $baseline-unit;
+
+	p:before,
+	p:after {
+		display: inline-block;
+		font-size: $font-size-larger;
+		line-height: 0;
+	}
+
+	p:first-child:before {
+		content: '\201C';
+	}
+
+	p:last-of-type {
+		margin: 0;
+
+		&:after {
+			content: '\201D';
+		}
+	}
+
+}
+
+button {
+	border: none;
+	font-family: $font-family-primary;
+}
+
+cite {
+	display: block;
+	text-align: right;
+}
+
+code {
+	background: $color-muted;
+	font-family: $font-family-primary;
+	padding: 0 $padding-code;
+}
+
+dl {
+	margin-bottom: $baseline-unit-px;
+
+	dd {
+		margin-left: $baseline-unit-px;
+	}
+
+	dt {
+		margin: 0;
+	}
+}
+
+em {
+	font-style: italic;
+}
+
+figure {
+	display: block;
+	margin-bottom: $baseline-unit-px;
+
+	img {
+		display: block;
+		width: 100%;
+	}
+
+	figcaption {
+		color: $color-muted;
+		font-style: italic;
+	}
+}
+
+i {
+	font-style: italic;
+}
+
+input {
+	font-family: $font-family-primary;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+	font-family: $font-family-primary;
+	font-weight: normal;
+	margin: 0;
+	margin-bottom: $baseline-unit-px;
+}
+
+h1, .h1 { font-size: $font-size-h1; }
+h2, .h2 { font-size: $font-size-h2; }
+h3, .h3 { font-size: $font-size-h3; }
+
+label {
+	margin: 0;
+}
+
+ol {
+	li {
+		list-style: decimal;
+	}
+
+	ol, ul {
+		margin-bottom: 0;
+	}
+}
+
+blockquote, code, dl, ol, p, pre, td, th, ul {
+	margin: 0;
+	margin-bottom: $baseline-unit-px;
+}
+
+	.standfirst {
+		font-size: $font-size-larger;
+	}
+
+select {
+	font-family: $font-family-primary;
+}
+
+strong {
+	font-weight: $font-weight-bold;
+}
+
+table {
+	border-collapse: collapse;
+	margin-bottom: $baseline-unit-px;
+
+	td, th {
+		margin: 0;
+	}
+}
+
+textarea {
+	font-family: $font-family-primary;
+}
+
+time {
+	display: inline-block;
+	font-size: $font-size-small;
+}
+
+ul {
+	li {
+		list-style: disc;
+	}
+
+	ol, ul {
+		margin-bottom: 0;
+	}
+}
